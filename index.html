@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis Trastos · Términos de uso / Terms of use</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; color: #1b1b1b; background: #f6f8f5;
+    margin: 0 auto; max-width: 34rem; padding: 4rem 1.25rem;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #f1ece6; background: #121715; } a { color: #6fc7ad; } }
+  h1 { font-size: 1.5rem; margin: 0 0 1.5rem; }
+  li { margin-bottom: .6rem; }
+  a { color: #2f6f5e; }
+</style>
+</head>
+<body>
+<h1>Mis Trastos</h1>
+<ul>
+  <li><a href="terminos.html">Términos de uso (español)</a></li>
+  <li><a href="terms.html">Terms of use (English)</a></li>
+</ul>
+<script>
+  // Google Play enseña esta dirección en todo el mundo: cada uno va a la de su idioma.
+  // Sin JavaScript se queda esta página con los dos enlaces.
+  var idioma = (navigator.language || '').toLowerCase();
+  location.replace(idioma.indexOf('es') === 0 ? 'terminos.html' : 'terms.html');
+</script>
+</body>
+</html>
